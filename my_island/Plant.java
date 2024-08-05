@@ -1,4 +1,4 @@
-package my_island;
+package my_island.my_island;
 
 public class Plant {
 
