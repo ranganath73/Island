@@ -5,13 +5,13 @@ import my_island.my_island.plants.Plant;
 
 public class Mouse extends Animal implements Runnable{
 
-    public void eat() {
-        if (hasSuitableFood()) {
-            if (Plant.isEdible()) {
-                System.out.println("I'm the \"Mouse\" who is eating plant.");
-            }
-        }
-    }
+//    public boolean eat() {
+//        if (hasSuitableFood()) {
+//            if (Plant.isEdible()) {
+//                System.out.println("I'm the \"Mouse\" who is eating plant.");
+//            }
+//        }
+//    }
 
     public void run() {
         eat();
