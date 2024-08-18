@@ -5,7 +5,7 @@ import my_island.my_island.plants.Plant;
 
 public class Rabbit extends Animal implements Runnable{
 
-    public void eat() {
+    public boolean eat() {
         if (hasSuitableFood()) {
             if (Plant.isEdible()) {
                 System.out.println("I'm the \"Rabbit\" who is eating plant.");

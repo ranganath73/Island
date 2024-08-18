@@ -19,22 +19,25 @@ import my_island.my_island.maths.MayIEat;
 
 //Random => from 0-9 = 0% - 90%
 
-public class Bear extends Animal {
+public class Bear extends Animal implements Runnable {
 
     public void iAmEating() {
-        if ((eat() && (MayIEat.generateEatProbability(0, 90) > 80))) {
-            System.out.println("I'm eating 'mouse'");
-        } else if ((eat() && (MayIEat.generateEatProbability(0, 90) > 70))) {
-            System.out.println("I'm eating 'boa' or 'deer' or 'rabbit'");
-        }  else if ((eat() && (MayIEat.generateEatProbability(0, 90) > 20))) {
-            System.out.println("I'm eating 'boar'");
-        } else if ((eat() && (MayIEat.generateEatProbability(0, 90) > 20))) {
-            System.out.println("I'm eating 'boar'");
-        } else if ((eat() && (MayIEat.generateEatProbability(0, 90) > 0))) {
-            System.out.println("I'm eating 'duck'");
+        int percentage = MayIEat.generateEatProbability(0, 90);
+
+        switch (percentage) {
+            case 90:
+                System.out.println("I'm eating 'mouse'");
+            case 80:
+                System.out.println("I'm eating 'boa' or 'deer' or 'rabbit'");
+
+            case 70:
+                System.out.println("I'm eating 'boar'");
+            case 10:
+                System.out.println("I'm eating 'duck'");
         }
     }
 
+    public void run() {}
     public void move() {}
 
     public void breed() {}

@@ -4,7 +4,7 @@ import my_island.my_island.animal.Animal;
 
 public class Wolf extends Animal {
 
-
+    public void run() {}
 
     public void move() {}
 
