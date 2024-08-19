@@ -3,15 +3,15 @@ package my_island.my_island.animal.herbivores;
 import my_island.my_island.animal.Animal;
 import my_island.my_island.plants.Plant;
 
-public class Duck extends Animal implements Runnable{
+public class Duck extends PlantEater {
 
-    public void eat() {
-        if (hasSuitableFood()) {
-            if (Plant.isEdible()) {
-                System.out.println("I'm the \"Duck\" who is eating plant.");
-            }
-        }
-    }
+//    public void eat() {
+//        if (hasSuitableFood()) {
+//            if (Plant.isEdible()) {
+//                System.out.println("I'm the \"Duck\" who is eating plant.");
+//            }
+//        }
+//    }
 
     public void run() {
         eat();

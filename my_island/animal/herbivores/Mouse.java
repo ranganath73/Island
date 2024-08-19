@@ -3,7 +3,7 @@ package my_island.my_island.animal.herbivores;
 import my_island.my_island.animal.Animal;
 import my_island.my_island.plants.Plant;
 
-public class Mouse extends Animal implements Runnable{
+public class Mouse extends PlantEater {
 
 //    public boolean eat() {
 //        if (hasSuitableFood()) {

@@ -9,7 +9,7 @@ package my_island.my_island.animal.carnivores;
 
 import my_island.my_island.animal.Animal;
 
-public class Boa extends Animal implements Runnable {
+public class Boa extends Hunter {
 
     public void run() {}
 

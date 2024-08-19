@@ -1,18 +1,22 @@
 package my_island.my_island.animal;
 
 import my_island.my_island.Location;
+import my_island.my_island.animal.behavior.CanBreed;
+import my_island.my_island.animal.behavior.CanEat;
+import my_island.my_island.animal.behavior.CanMove;
+import my_island.my_island.animal.behavior.MayDie;
 import my_island.my_island.plants.Plant;
 
-public abstract class Animal extends Location
+public abstract class Animal implements CanEat, CanMove, CanBreed, MayDie
 {
-    public boolean eat() {
-        if (hasSuitableFood()) {
-            if (Plant.isEdible()) {
-                return true;
-            }
-        }
-        return false;
-    }
+//    public boolean eat() {
+//        if (hasSuitableFood()) {
+//            if (Plant.isEdible()) {
+//                return true;
+//            }
+////        }
+//        return false;
+//    }
 
 
 //--->   v1.0

@@ -19,7 +19,7 @@ import my_island.my_island.maths.MayIEat;
 
 //Random => from 0-9 = 0% - 90%
 
-public class Bear extends Animal implements Runnable {
+public class Bear extends Hunter {
 
     public void iAmEating() {
         int percentage = MayIEat.generateEatProbability(0, 90);

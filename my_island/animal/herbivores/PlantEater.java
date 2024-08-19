@@ -1,9 +1,25 @@
 package my_island.my_island.animal.herbivores;
 
-import my_island.my_island.animal.behavior.CanBreed;
-import my_island.my_island.animal.behavior.CanEat;
-import my_island.my_island.animal.behavior.CanMove;
-import my_island.my_island.animal.behavior.MayDie;
+import my_island.my_island.animal.Animal;
 
-public abstract class PlantEater implements CanEat, CanMove, CanBreed, MayDie {
+public class PlantEater extends Animal {
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void move() {
+
+    }
+
+    @Override
+    public void breed() {
+
+    }
+
+    @Override
+    public void die() {
+
+    }
 }
