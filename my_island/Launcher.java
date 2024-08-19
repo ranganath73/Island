@@ -11,7 +11,7 @@ public class Launcher {
         PlantEater plantEater = new PlantEater();
         Plant plant = new Plant();
 
-        Island<Location, Hunter, PlantEater, Plant> island = new Island<Location, Hunter, PlantEater, Plant>(
+        Island<Location, Hunter, PlantEater, Plant> region1 = new Island<Location, Hunter, PlantEater, Plant>(
                 new Location(5,3), new Hunter(), new PlantEater(), new Plant()
         );
     }
